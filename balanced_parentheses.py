@@ -13,7 +13,7 @@ class Stack:
     def __init__(self):
         self.items = []
 
-    def isEmpty(self):
+    def is_empty(self):
         return self.items == []
 
     def push(self, item):
@@ -42,7 +42,7 @@ def par_check(str):
         if symbol == "(":
             s.push(symbol)
         else:
-            if s.isEmpty():
+            if s.is_empty():
                 balanced = False
             else:
                 s.pop()
@@ -50,7 +50,7 @@ def par_check(str):
         index += 1
 
 
-    if balanced and s.isEmpty():
+    if balanced and s.is_empty():
         return "Parentheses are balanced!"
     else:
         return "Not balanced!"
