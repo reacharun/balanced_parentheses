@@ -57,7 +57,7 @@ def par_check(str):
 
 
 def main():
-    prompt = str(input("Enter a sequence to parentheses to check if it's balanced..."))
+    prompt = str(input("Enter a sequence of parentheses to check if it's balanced..."))
     print(par_check(prompt))
 
 main()
